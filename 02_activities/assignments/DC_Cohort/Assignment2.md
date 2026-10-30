@@ -193,5 +193,15 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+I didn’t expect an essay about pajama pants to change how I look at AI, but here we are. Boykis starts with the fact that no robot can sew a t-shirt, then pulls the same thread through machine learning. Under every image classifier there’s a person on Mechanical Turk, paid a few cents, deciding whether a picture is a hot dog. Under them, a linguist at Princeton who decided “pizza” and “pizza pie” mean the same thing. Under him, grad students in 1963 tagging newspaper clippings. People all the way down, each making a small call based on what seemed obvious to them at the time.
+
+I knew this in theory. I hadn’t really felt it until I read the piece, and now I can’t stop seeing it.
+
+Take the tools I use every day. When I ask a language model to draft an email, I’m borrowing someone else’s idea of a good email. Thousands of anonymous raters, most of them working quickly for little money, decided what counts as helpful, professional, well-written. Their taste is now in my inbox. ImageNet Roulette showed the ugly version, labelling one man an “orphan” and another a “swot.” The polished, polite version I get every day is the same judgment with better manners.
+
+It’s closer to home in the classroom. I teach analytics, and every dataset I give students arrives with boxes someone else drew: five options for ethnicity, one address per household. Students read those as facts. They’re decisions, often made years ago for a form with a different purpose. The Brown Corpus picked 1961 prose as “present-day English,” and it’s still underneath systems we use today.
+
+The piece also made me think about who gets remembered. George Miller’s wife helped build WordNet and isn’t in his obituary. Fei-Fei Li is famous for ImageNet; the Turkers aren’t. In my own work, the model gets the credit and the person who cleaned the data doesn’t, even though they made the calls that mattered: which rows to drop, what “unknown” means. I’ve been that person on reporting projects. Nobody cites whoever decided how to treat a blank cell, but that choice ended up in every chart that followed.
+
+So what values are baked into the data systems I meet? A belief that a category becomes neutral once it’s in a column. A habit of hiding the human work so the result looks like it came from a machine. And an assumption that whoever drew the boxes first gets to define normal for everyone after. ImageNet’s own fix says it best: they’re going back through 2,832 “person” categories by hand. There’s no shortcut. Someone has to look at each label and ask if it should exist. The only real question is whether we do that before the system ships, or after it has called someone an orphan.
 ```

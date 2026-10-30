@@ -209,5 +209,17 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+The NADRA story stuck with me because it’s so ordinary. A man can’t renew his ID card because a database refuses to believe his parents are married. They’ve been married 31 years. Nobody at the counter can help him. “Sorry, sir, the computer doesn’t allow it.” Once a social expectation gets written into a schema as a required field, it stops being an expectation and becomes a gate. You either match the pattern or you don’t exist.
+
+After reading it, I started noticing how many of these gates I walk through, or hold open for others, every week.
+
+Take D2L, which I use for teaching. The gradebook assumes a course is a line of separate assignments, each with one number attached, handed in by one person on one date. Anything that doesn’t fit, like group work, a resubmission, or an accommodation, has to be worked around with overrides and special-access windows. The system’s idea of a student is someone who works alone and on time. Everyone else becomes a manual exception I fix by hand, which is exactly what NADRA’s officers end up doing with fake marriage certificates and random “database adoptions.” The fairness baked in is the fairness of the assembly line: same treatment, same clock.
+
+I’ve also spent time inside a health regulator’s membership database and the reports it feeds to the Ministry. Those tables have a clear picture of who a legitimate practitioner is: one legal name, one practice address, a credential from a recognized school, a status that’s either active or not. If you trained abroad, have a name that doesn’t fit the expected shape, work in three places, or are somewhere in between statuses, the system strains. And because the public report is built from those same columns, whatever has no column simply doesn’t show up in the story the public hears about the profession.
+
+Then there’s the credit file. Canada doesn’t have one card that opens every door the way the CNIC does, but the logic is familiar. A credit score assumes a long, unbroken, documented history here. Arrive with twenty years of paying every bill on time somewhere else and you start at nothing. The system reads “no data” as “risky.” That’s a value judgment pretending to be a technicality.
+
+Even the smallest forms carry assumptions. Name, sex, marital status, address: each one quietly insists that a person has a single name, a fixed home, and that their sex or marriage is somehow relevant to the task at hand. The article’s suggestion to replace boolean fields with expandable lists is good advice, but it doesn’t question why the field is there at all.
+
+What I keep coming back to is that the real decisions happen in places no one looks. Nobody argues over a foreign key in a policy meeting, yet that’s where someone gets recognized or turned away. And the people who don’t fit are not a handful. Single parents, newcomers, orphans, people with two jobs or two homes: together they’re a big share of everyone. A schema that calls them exceptions is really just one group’s self-portrait presented as fact. The question I now want to ask of any system I build or audit is simple: what happens to the person the query says no to, and who was in the room when that was decided?
 ```

@@ -57,7 +57,45 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Architecture 1: overwrite changes (Type 1 slowly changing dimension)
+
+CUSTOMER_ADDRESS
+- customer_id (PK, FK to customer)
+- street_address
+- city
+- province
+- postal_code
+- country
+- last_updated (date)
+
+Each customer has exactly one row. When a customer moves, the existing
+row is updated in place and the old address is lost. This keeps the
+table small and simple, and is enough if the store only needs to know
+where to ship today's order.
+
+Architecture 2: retain changes (Type 2 slowly changing dimension)
+
+CUSTOMER_ADDRESS
+- customer_address_id (PK, surrogate key)
+- customer_id (FK to customer)
+- street_address
+- city
+- province
+- postal_code
+- country
+- effective_start_date (FK to date)
+- effective_end_date (FK to date, NULL while current)
+- is_current (boolean)
+
+A customer can have many rows. When a customer moves, the current row
+is closed (effective_end_date is set and is_current becomes false) and a
+new row is inserted for the new address. Nothing is overwritten, so the
+store can see where a customer lived when any past order was placed.
+The cost is a larger table and slightly more complex queries, which
+must filter on is_current or on the date range.
+
+Summary: the overwrite design is Type 1; the design that keeps history
+is Type 2.
 ```
 
 ***
